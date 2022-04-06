@@ -4,6 +4,9 @@
   font-family: Nunito;
 }
 
+body {
+  margin: 40px;
+}
 header {
   border: 5px solid lightgray;
 }
@@ -14,48 +17,47 @@ header {
   justify-content: center;
   flex-wrap: wrap;
   gap: 0px;
-  border: 5px solid blue;
 }
 
 h1 {
   display: flex;
+  align-self: flex-end;
   justify-content: flex-start;
-  padding: 20px;
+  padding: 50px 0 0 20px;
   font-weight: bold;
   text-transform: uppercase;
-  border: 5px solid red;
+  color: rgb(225, 100, 0);
+  font-size: 22px;
 }
 
 .container__titles {
   display: flex;
   flex-direction: row;
-  align-items: baseline;
+  align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
   font-weight: bold;
-  padding: 0;
-  margin: 0;
-  border: 5px solid lightblue;
+  margin: 0 20px 20px 20px;
 }
 .container__titles h2 {
-  text-align: center;
-  font-size: 90px;
-  border: 5px solid yellowgreen;
+  font-size: 60px;
+  margin: 0 0 40px 0;
 }
-.container__titles button {
-  border: 5px solid purple;
+.container__images {
+  gap: 35px;
+  justify-content: space-between;
+  margin: 0 20px 0 20px;
 }
-
-a > img {
+a img {
   border-radius: 30px;
   width: 325px;
   height: 400px;
   object-fit: cover;
-  margin: 20px;
+  margin: 0 0 0 0;
 }
 
 .button__view-all {
-  background-color: rgb(225, 125, 0);
+  background-color: rgb(225, 100, 0);
   color: white;
   width: 175px;
   height: 75px;
@@ -65,4 +67,8 @@ a > img {
   font-weight: bold;
   text-transform: uppercase;
   font-size: 18px;
+}
+
+:is(.button__view-all, a img):hover {
+  filter: brightness(0.5);
 }
