@@ -1,3 +1,12 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;800&display=swap");
+
+* {
+  font-family: Nunito;
+}
+
+header {
+  border: 5px solid lightgray;
+}
 .container {
   display: flex;
   flex-direction: row;
@@ -9,22 +18,32 @@
 }
 
 h1 {
+  display: flex;
+  justify-content: flex-start;
+  padding: 20px;
   font-weight: bold;
   text-transform: uppercase;
+  border: 5px solid red;
 }
 
-h2 {
+.container__titles {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  justify-content: space-between;
+  flex-wrap: wrap;
   font-weight: bold;
-  text-transform: uppercase;
+  padding: 0;
+  margin: 0;
+  border: 5px solid lightblue;
 }
-.container__h2 p {
-  flex-grow: 2;
-  margin: 20px;
-  justify-content: center;
+.container__titles h2 {
+  text-align: center;
+  font-size: 90px;
+  border: 5px solid yellowgreen;
 }
-.container__h2 button {
-  flex-grow: 0.25;
-  margin: 20px;
+.container__titles button {
+  border: 5px solid purple;
 }
 
 a > img {
@@ -36,10 +55,14 @@ a > img {
 }
 
 .button__view-all {
-  background-color: darkorange;
+  background-color: rgb(225, 125, 0);
   color: white;
-  width: 110px;
-  height: 65px;
+  width: 175px;
+  height: 75px;
   border: 0px;
   border-radius: 25px;
+  font-family: nunito;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 18px;
 }
