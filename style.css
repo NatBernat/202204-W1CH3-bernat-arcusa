@@ -1,0 +1,74 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;800&display=swap");
+
+* {
+  font-family: Nunito;
+}
+
+body {
+  margin: 40px;
+}
+header {
+  border: 5px solid lightgray;
+}
+.container {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0px;
+}
+
+h1 {
+  display: flex;
+  align-self: flex-end;
+  justify-content: flex-start;
+  padding: 50px 0 0 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: rgb(225, 100, 0);
+  font-size: 22px;
+}
+
+.container__titles {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  font-weight: bold;
+  margin: 0 20px 20px 20px;
+}
+.container__titles h2 {
+  font-size: 60px;
+  margin: 0 0 40px 0;
+}
+.container__images {
+  gap: 35px;
+  justify-content: space-between;
+  margin: 0 20px 0 20px;
+}
+a img {
+  border-radius: 30px;
+  width: 325px;
+  height: 400px;
+  object-fit: cover;
+  margin: 0 0 0 0;
+}
+
+.button__view-all {
+  background-color: rgb(225, 100, 0);
+  color: white;
+  width: 175px;
+  height: 75px;
+  border: 0px;
+  border-radius: 25px;
+  font-family: nunito;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 18px;
+}
+
+:is(.button__view-all, a img):hover {
+  filter: brightness(0.5);
+}
